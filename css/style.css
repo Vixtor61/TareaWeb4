@@ -17,7 +17,7 @@ body{
 header{
     display: flex;
     background-image: url("../source/img/chicago.gif");
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     background-size: cover;
 }
@@ -42,15 +42,15 @@ header{
 .text h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
-    font-size: 4em;
+    font-size: 4rem;
     width: 100%;
     display: inherit;
     margin-bottom: 0;
     justify-content: inherit;
 }
 .text p{
-    
-    width: 100%;
+    text-align: center;
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     
@@ -136,7 +136,7 @@ footer{
 .footer-icons{
     display: flex;
 justify-content: center;
-    padding: 0 30%;
+    padding: 0;
 }
 .footer-icons i{
     border-radius: 100px;
@@ -145,6 +145,12 @@ justify-content: center;
     font-size: 1.50rem;
     border: solid 1px rgba(144, 144, 144, 0.25);
     color: rgba(144, 144, 144, 0.25);
+}
+.footer-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
 }
 .footer-text p{
     width: 40vw;
@@ -155,9 +161,21 @@ justify-content: center;
     text-align: center;
 }
 .footer-text h2{
-    
+    width: 100%;
     font-size: 1.75rem;
     font-weight: 100;
     color: white;
     text-align: center;
+}
+@media only screen and (max-width: 600px){
+    .content{
+     grid-template-columns: repeat(1,100%);
+        padding: 0;
+        margin: 0;
+    }
+    .grid-content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
