@@ -1,6 +1,6 @@
  :root{
     font-family: sans-serif;
-    font-size: calc(1rem + 1%);
+    font-size: calc(.75rem + 7%);
     padding-bottom: 0;
     margin: 0;
     color: whitesmoke;
@@ -19,6 +19,7 @@ header{
     background-image: url("../source/img/chicago.gif");
     height: 80vh;
     width: 100vw;
+    
     background-size: cover;
 }
 .header-content{
@@ -40,9 +41,10 @@ header{
     width: 100vw;   
 }
 .text h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    font-family: "Passion One", cursive;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 3rem;
     width: 100%;
     display: inherit;
     margin-bottom: 0;
@@ -50,17 +52,17 @@ header{
 }
 .text p{
     text-align: center;
-    width: 30%;
+    width: 70vw;
     display: flex;
     flex-wrap: wrap;
-    
+    font-size: 1.2em;
    
     justify-content: inherit;
     margin-bottom: 0;
 }
 
 
-.mierda1 i{
+.icon i{
     padding-top: 2vh;
     font-size: 5rem;
     display: inherit;
@@ -73,17 +75,19 @@ header{
     padding: 4em 6.5em 2em 6.5em;
     grid-template-columns: repeat(3,33.33333333%);
 }
+
 .grid-content{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: space-between;
     padding: 0px 0px;
     border-radius: 4px;
     background: #2c2c32;
     margin: 10px 10px;
 }
 .grid-content img{
-    position: relative;
+    margin: 0;
     width: 100%;
 }
 
@@ -101,17 +105,19 @@ header{
     font-weight: 100;
     color: white;
     text-align: center;
-    
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .grid-text{
     width: 100%;
 
 }
 .btn{
+    height: 3rem;
     width: 100%;
     color: whitesmoke;
     padding: 0.75rem;
-    margin: 1rem 1rem;
+    margin: 10px;
     border: 0px;
     border-radius: 4px;
     
@@ -166,6 +172,26 @@ justify-content: center;
     font-weight: 100;
     color: white;
     text-align: center;
+}
+.cright{
+
+    width: 100vw;
+    
+}
+.cright p{
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    font-weight: 100;
+    color: white;
+    
+ text-align: center;
+}
+@media only screen and (max-width: 1280px){
+    .content{
+     grid-template-columns: repeat(2,50%);
+       
+    }
+   
 }
 @media only screen and (max-width: 600px){
     .content{
